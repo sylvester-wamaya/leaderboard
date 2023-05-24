@@ -4,10 +4,10 @@
 
 <div align="center">
 
-  <img src="assets/download (2).png" alt="logo" width="140"  height="auto" />
+  <img src="src/modules/logo tr.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Javascript Webpack setup</b></h3>
+  <h3><b>Leaderboard</b></h3>
 
 </div>
 
@@ -36,17 +36,17 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Javascript Webpack setup <a name="about-project"></a>
+# 📖 Leaderboard <a name="about-project"></a>
 
 
-Javascript Webpack setup is a project that sets up a webpack for javascript. I created the project using HTML and CSS, Javascript and webpack and other bundles.
+Leaderboard application is an application that allows a user to enter a score and displays it. I created the project using HTML, CSS and Javascript.
 
 ## 🛠 Built With <a name="built-with"></a>
 1- HTML.
 
 2- CSS.
 
-3- Javascript
+3- Javascript.
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -55,7 +55,7 @@ Javascript Webpack setup is a project that sets up a webpack for javascript. I c
   <ul>
     <li><a href="https://html.com/">HTML</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Javascript/">Javascript</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a></li>
   </ul>
 </details>
 
@@ -65,14 +65,22 @@ Javascript Webpack setup is a project that sets up a webpack for javascript. I c
 
 ### Key Features <a name="key-features"></a>
 
-- Added HTML file.
-- Added CSS file.
-- Added Javascript file.
-- Set up Webpack.
+- Added input form for scores.
+- Added display section for scores.
+- Added header.
+- Added styling.
+- Added responsiveness.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Coming soon
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -99,7 +107,7 @@ Clone this repository to your desired folder:
 Run this command:
 
 ```sh
-git clone git@github.com:sylvester-wamaya/webpack.git
+git clone git@github.com:sylvester-wamaya/leaderboard.git
 ```
 
 
@@ -110,7 +118,7 @@ Install this project with:
 Run this command:
 
 ```sh
-  cd webpack
+  cd leaderboard
   npm install
 ```
 
@@ -119,14 +127,22 @@ Run this command:
 
 To run the project, execute the following command:
 ```sh
-Run server
+npm start
 ```
-
+or 
+```sh
+npm run start
+```
 
 ### Run tests
 
-> Coming soon
+> Coming soon...
 
+
+
+### Deployment
+
+> Coming soon...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,11 +163,9 @@ Run server
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Add more HTML content.
-- [ ] Add more webpack setups.
-- [ ] Add more packages.
-- [ ] Add more styles.
-
+- [ ] Add fetching of scores from API
+- [ ] Add posting of scores to API
+- [ ] Add more styling.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
