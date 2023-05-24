@@ -1,17 +1,14 @@
 import _ from 'lodash';
 import './style.css';
-import display from './modules/display.js';
+import listing from './modules/scores.js';
 import form from './modules/form.js';
 
-const section = document.createElement("section")
-
-
-  const list = document.createElement('div');
+const section = document.createElement("main")
   const input = document.createElement('div');
-  list.innerHTML = display
+
   input.innerHTML = form
 
-
-section.appendChild(list);
+section.appendChild(listing());
 section.appendChild(input);
+
 document.body.appendChild(section);
