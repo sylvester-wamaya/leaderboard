@@ -7,6 +7,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+h1{
+  margin: 2vw 22vw;
+  font-size: 4vw;
+}
 ul{
   border: solid 2px;
   width: 25vw;
@@ -38,5 +42,16 @@ main {
 }
 form{
   display: flex;
+  gap: 2vw;
   flex-direction: column;
+  margin-top: 2vw;
+}
+form button{
+  width:fit-content;
+  align-self: end;
+  
+}
+input{
+  padding: 0.5vw;
+  border: solid 2px;
 }
