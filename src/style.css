@@ -1,8 +1,42 @@
 body {
-  background-color: bisque;
+  font-family: 'Lato', sans-serif;
+  
 }
-
-section {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  border: solid 2px;
+  width: 25vw;
+  margin-top: 2vw;
+}
+li{
+  list-style: none;
+  padding: 0.5vw;
+}
+li:nth-child(even){
+  background-color: rgb(225, 225, 225);
+}
+#score-h{
   display: flex;
   justify-content: space-between;
+}
+button{
+  padding: 0.5vw 1vw;
+  border-radius: 4px;
+  box-shadow: rgba(119, 117, 117, 0.66) 0 1px 4px;
+  background-color: #fff;
+}
+
+main {
+  display: flex;
+  gap: 10%; 
+  max-width: 50%;
+  margin: auto;
+}
+form{
+  display: flex;
+  flex-direction: column;
 }
