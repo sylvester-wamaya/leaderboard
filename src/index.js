@@ -9,5 +9,4 @@ input.innerHTML = form;
 
 section.appendChild(listing());
 section.appendChild(input);
-
 document.body.appendChild(section);
