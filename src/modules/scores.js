@@ -7,7 +7,7 @@ const listing = ()=>{
 
     for(let i=0; i<scores.length; i++){
         const li = document.createElement("li")
-        const name = "name"
+        const name = "Name"
         li.innerHTML = `
         ${name}: ${scores[i]}`
         ul.appendChild(li)
