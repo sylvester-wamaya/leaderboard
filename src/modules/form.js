@@ -1,5 +1,4 @@
-const form = 
-    `
+const form = `
     
     <h2>Recent scores</h2>
     <form action="#">
@@ -8,7 +7,6 @@ const form =
         <button type="submit">Submit</button>
     </form>
 
-    `
+    `;
 
-
-export default form
+export default form;

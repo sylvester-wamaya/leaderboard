@@ -1,33 +1,39 @@
 body {
   font-family: 'Lato', sans-serif;
-  
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-h1{
+
+h1 {
   margin: 2vw 22vw;
   font-size: 4vw;
 }
-ul{
+
+ul {
   border: solid 2px;
   width: 25vw;
   margin-top: 2vw;
 }
-li{
+
+li {
   list-style: none;
   padding: 0.5vw;
 }
-li:nth-child(even){
+
+li:nth-child(even) {
   background-color: rgb(225, 225, 225);
 }
-#score-h{
+
+#score-h {
   display: flex;
   justify-content: space-between;
 }
-button{
+
+button {
   padding: 0.5vw 1vw;
   border-radius: 4px;
   box-shadow: rgba(119, 117, 117, 0.66) 0 1px 4px;
@@ -36,22 +42,24 @@ button{
 
 main {
   display: flex;
-  gap: 10%; 
+  gap: 10%;
   max-width: 50%;
   margin: auto;
 }
-form{
+
+form {
   display: flex;
   gap: 2vw;
   flex-direction: column;
   margin-top: 2vw;
 }
-form button{
-  width:fit-content;
+
+form button {
+  width: fit-content;
   align-self: end;
-  
 }
-input{
+
+input {
   padding: 0.5vw;
   border: solid 2px;
 }

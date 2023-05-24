@@ -1,12 +1,11 @@
-import _ from 'lodash';
 import './style.css';
 import listing from './modules/scores.js';
 import form from './modules/form.js';
 
-const section = document.createElement("main")
-  const input = document.createElement('div');
+const section = document.createElement('main');
+const input = document.createElement('div');
 
-  input.innerHTML = form
+input.innerHTML = form;
 
 section.appendChild(listing());
 section.appendChild(input);
