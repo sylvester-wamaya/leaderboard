@@ -2,7 +2,7 @@ body {
   background-color: bisque;
 }
 
-#hello {
-  color: red;
-  background: url('./icon.png');
+section {
+  display: flex;
+  justify-content: space-between;
 }
