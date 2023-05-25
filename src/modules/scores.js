@@ -1,3 +1,4 @@
+import gameObject from "./game.js";
 const listing = () => {
  
   const ul = document.createElement('ul');
@@ -7,11 +8,15 @@ const listing = () => {
 
 
 
-const fetchData = ()=>{
-    fetch("https://reqres.in/api/users")
-    .then(response=>response.json())
-    .then(responseData => {
-      const scores =    responseData.data
+const fetchData = async()=>{
+    const response = await fetch("https://reqres.in/api/users")
+    const jsonData = await response.json()
+    
+      const scores = await jsonData.data
+
+      while(ul.firstChild){
+        ul.removeChild(ul.firstChild)
+      }
 
         for (let i = 0; i < scores.length; i += 1) {
             const li = document.createElement('li');
@@ -21,7 +26,22 @@ const fetchData = ()=>{
             ul.appendChild(li);
           }      
         
-    })
+    
+}  
+
+fetchData()
+
+
+const postData = async()=>{
+    const options = {
+        method: "POST",
+        headers: data ? { "Content-Type" : "Application/json" } : {},   
+        body: ScoreData,
+    }
+    
+    const response = await fetch("https://reqres.in/api/users",options) 
+        
+
 }  
 
 
