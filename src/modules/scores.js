@@ -30,12 +30,16 @@ const listing = () => {
 <h2>Recent scores</h2>
 `;
   refresh.type = 'button';
+  refresh.id = 'refresh';
   refresh.textContent = 'Refresh';
   scoreHead.appendChild(refresh);
   container.appendChild(scoreHead);
   container.appendChild(ul);
 
-  refresh.addEventListener('click', fetchData);
+  refresh.addEventListener('click', ()=>{
+    fetchData()
+    refresh.classList.remove("animate")
+});
 
   return container;
 };
