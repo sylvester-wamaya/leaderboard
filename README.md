@@ -70,6 +70,8 @@ Leaderboard application is an application that allows a user to enter a score an
 - Added header.
 - Added styling.
 - Added responsiveness.
+- Fetch scores from API.
+- Post scores to the API
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -163,8 +165,7 @@ npm run start
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Add fetching of scores from API
-- [ ] Add posting of scores to API
+
 - [ ] Add more styling.
 
 
