@@ -28,12 +28,32 @@ formContainer.innerHTML = `
     return formContainer
 
 }
-submit.addEventListener("click", (e)=>{
-    e.preventDefault()
-    const playerScore = new GameObject(nameInput.value, scoreInput.value)
-   
-})
+
+const postData = () =>{
+
+    submit.addEventListener("click", async (e)=>{
+        e.preventDefault()
+        const playerScore = new GameObject(nameInput.value.trim(), scoreInput.value.trim())
+        form.reset()
+        
+        
+            const options = {
+                method: "POST",
+                headers: { 
+                    "Content-Type" : "application/json",
+                },
+                body: JSON.stringify(playerScore),
+            };
+            
+            await fetch("https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/test/scores/", options) 
+            .then(response => response.json())          
+        
+         
+           
+    })
+}
 
 
 
-export default formSection;
+
+export {formSection, postData}
