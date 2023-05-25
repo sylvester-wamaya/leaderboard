@@ -16,6 +16,9 @@ h1 {
   border-bottom: solid 2px;
 
 }
+h2{
+  color: teal;
+}
 
 ul {
   border: solid 2px;
@@ -23,8 +26,16 @@ ul {
   margin-top: 2vw;
   overflow-y: auto;
   border-radius: 1vw;
+  max-height: 55vh;
+  
  
 }
+ul:hover{
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 2px;
+  border: solid 2px rgb(135, 131, 131);
+ 
+}
+
 
 li {
   list-style: none;
@@ -33,6 +44,10 @@ li {
 
 li:nth-child(even) {
   background-color: rgb(225, 225, 225);
+}
+li:hover{
+  border-bottom: solid 2px teal;
+  background-color: bisque;
 }
 
 #score-h {
@@ -45,6 +60,18 @@ button {
   border-radius: 4px;
   box-shadow: rgba(119, 117, 117, 0.66) 0 1px 4px;
   background-color: #fff;
+  cursor: pointer;
+ 
+}
+button:hover{
+  border:solid 2px rgb(238, 102, 102);
+  
+  color: teal;
+}
+button:active{
+  border:solid 2px rgb(184, 92, 92);
+  background-color: bisque;
+ 
  
 }
 
@@ -56,7 +83,8 @@ main {
   background-color: #fff;
   padding: 2vw;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  max-height: 90vh;
+  max-height: 73vh;
+  border-radius: 1vw;
 }
 
 form {
@@ -74,4 +102,27 @@ form button {
 input {
   padding: 0.5vw;
   border: solid 2px;
+  border-radius: 0.5vw;
+}
+input:focus{
+  transform: scaley(1.15);
+  border: solid 2px teal;
+  outline: none;
+}
+
+.animate{
+  animation: scale 1s ease-in-out infinite alternate;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  
+  }
+
+
+
+  100% {
+    transform: scale(1.15);
+  
+  }
 }
