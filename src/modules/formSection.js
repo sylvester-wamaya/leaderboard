@@ -8,7 +8,7 @@ const scoreInput = document.createElement('input');
 
 const formSection = () => {
   formContainer.innerHTML = `
-<h2>Recent scores</h2>
+<h2>Add Your score</h2>
 `;
   nameInput.type = 'text';
   nameInput.placeholder = 'Your name';
@@ -32,7 +32,8 @@ const postData = () => {
     e.preventDefault();
     const playerScore = new GameObject(nameInput.value.trim(), scoreInput.value.trim());
     form.reset();
-
+    const refresh = document.querySelector('#refresh');
+    refresh.className = 'animate';
     const options = {
       method: 'POST',
       headers: {
