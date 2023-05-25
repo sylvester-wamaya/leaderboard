@@ -85,6 +85,7 @@ main {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   max-height: 73vh;
   border-radius: 1vw;
+ 
 }
 
 form {
@@ -103,6 +104,7 @@ input {
   padding: 0.5vw;
   border: solid 2px;
   border-radius: 0.5vw;
+  width: 100%;
 }
 input:focus{
   transform: scaley(1.15);
@@ -125,4 +127,10 @@ input:focus{
     transform: scale(1.15);
   
   }
+}
+@media screen and (max-width: 600px){
+main{
+  max-width: 90%;
+}
+  
 }
