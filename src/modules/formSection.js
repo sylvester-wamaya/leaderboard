@@ -31,7 +31,7 @@ formContainer.innerHTML = `
 submit.addEventListener("click", (e)=>{
     e.preventDefault()
     const playerScore = new GameObject(nameInput.value, scoreInput.value)
-    console.log (playerScore)
+   
 })
 
 
