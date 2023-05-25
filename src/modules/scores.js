@@ -9,7 +9,7 @@ const listing = () => {
 
 
 const fetchData = async()=>{
-    const response = await fetch("https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/test/scores/")
+    const response = await fetch("https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/wamaya/scores/")
     const jsonData = await response.json()
     
       const scores = await jsonData.result

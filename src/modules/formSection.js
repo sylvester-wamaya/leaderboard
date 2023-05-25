@@ -45,7 +45,7 @@ const postData = () =>{
                 body: JSON.stringify(playerScore),
             };
             
-            await fetch("https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/test/scores/", options) 
+            await fetch("https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/wamaya/scores/", options) 
             .then(response => response.json())          
         
          
