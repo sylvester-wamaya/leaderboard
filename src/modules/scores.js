@@ -9,41 +9,27 @@ const listing = () => {
 
 
 const fetchData = async()=>{
-    const response = await fetch("https://reqres.in/api/users")
+    const response = await fetch("https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/test/scores/")
     const jsonData = await response.json()
     
-      const scores = await jsonData.data
+      const scores = await jsonData.result
+     
 
       while(ul.firstChild){
         ul.removeChild(ul.firstChild)
       }
-
+      if(scores){
         for (let i = 0; i < scores.length; i += 1) {
             const li = document.createElement('li');
-            const name = 'Name';
             li.innerHTML = `
-                ${name}: ${scores[i].first_name}`;
+                ${scores[i].user}: ${scores[i].score}`;
             ul.appendChild(li);
-          }      
+          }    }  
         
     
 }  
 
 fetchData()
-
-
-const postData = async()=>{
-    const options = {
-        method: "POST",
-        headers: data ? { "Content-Type" : "Application/json" } : {},   
-        body: ScoreData,
-    }
-    
-    const response = await fetch("https://reqres.in/api/users",options) 
-        
-
-}  
-
 
   scoreHead.id = "score-h"
   scoreHead.innerHTML = `
