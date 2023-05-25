@@ -14,9 +14,9 @@ h1 {
   font-size: 4vw;
   text-shadow: 0 0 3px rgb(244, 11, 11);
   border-bottom: solid 2px;
-
 }
-h2{
+
+h2 {
   color: teal;
 }
 
@@ -27,15 +27,12 @@ ul {
   overflow-y: auto;
   border-radius: 1vw;
   max-height: 55vh;
-  
- 
-}
-ul:hover{
-  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 2px;
-  border: solid 2px rgb(135, 131, 131);
- 
 }
 
+ul:hover {
+  box-shadow: rgba(3, 102, 214, 0.3) 0 0 0 2px;
+  border: solid 2px rgb(135, 131, 131);
+}
 
 li {
   list-style: none;
@@ -45,7 +42,8 @@ li {
 li:nth-child(even) {
   background-color: rgb(225, 225, 225);
 }
-li:hover{
+
+li:hover {
   border-bottom: solid 2px teal;
   background-color: bisque;
 }
@@ -61,18 +59,21 @@ button {
   box-shadow: rgba(119, 117, 117, 0.66) 0 1px 4px;
   background-color: #fff;
   cursor: pointer;
- 
 }
-button:hover{
-  border:solid 2px rgb(238, 102, 102);
-  
+
+form button {
+  width: fit-content;
+  align-self: end;
+}
+
+button:hover {
+  border: solid 2px rgb(238, 102, 102);
   color: teal;
 }
-button:active{
-  border:solid 2px rgb(184, 92, 92);
+
+button:active {
+  border: solid 2px rgb(184, 92, 92);
   background-color: bisque;
- 
- 
 }
 
 main {
@@ -82,10 +83,9 @@ main {
   margin: auto;
   background-color: #fff;
   padding: 2vw;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   max-height: 73vh;
   border-radius: 1vw;
- 
 }
 
 form {
@@ -95,42 +95,35 @@ form {
   margin-top: 2vw;
 }
 
-form button {
-  width: fit-content;
-  align-self: end;
-}
-
 input {
   padding: 0.5vw;
   border: solid 2px;
   border-radius: 0.5vw;
   width: 100%;
 }
-input:focus{
-  transform: scaley(1.15);
+
+input:focus {
+  transform: scaleY(1.15);
   border: solid 2px teal;
   outline: none;
 }
 
-.animate{
+.animate {
   animation: scale 1s ease-in-out infinite alternate;
 }
+
 @keyframes scale {
   0% {
     transform: scale(1);
-  
   }
-
-
 
   100% {
     transform: scale(1.15);
-  
   }
 }
-@media screen and (max-width: 600px){
-main{
-  max-width: 90%;
-}
-  
+
+@media screen and (max-width: 600px) {
+  main {
+    max-width: 90%;
+  }
 }

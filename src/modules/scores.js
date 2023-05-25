@@ -36,10 +36,10 @@ const listing = () => {
   container.appendChild(scoreHead);
   container.appendChild(ul);
 
-  refresh.addEventListener('click', ()=>{
-    fetchData()
-    refresh.classList.remove("animate")
-});
+  refresh.addEventListener('click', () => {
+    fetchData();
+    refresh.classList.remove('animate');
+  });
 
   return container;
 };

@@ -32,8 +32,8 @@ const postData = () => {
     e.preventDefault();
     const playerScore = new GameObject(nameInput.value.trim(), scoreInput.value.trim());
     form.reset();
-    const refresh = document.querySelector("#refresh")
-    refresh.className = "animate"
+    const refresh = document.querySelector('#refresh');
+    refresh.className = 'animate';
     const options = {
       method: 'POST',
       headers: {
