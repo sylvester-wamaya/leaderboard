@@ -8,7 +8,7 @@ const scoreInput = document.createElement('input');
 
 const formSection = () => {
   formContainer.innerHTML = `
-<h2>Recent scores</h2>
+<h2>Add Your score</h2>
 `;
   nameInput.type = 'text';
   nameInput.placeholder = 'Your name';
