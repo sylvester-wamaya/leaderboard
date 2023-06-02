@@ -1,21 +1,10 @@
-import _ from 'lodash';
 import './style.css';
-import Icon from './icon.png';
+import listing from './modules/scores.js';
+import { formSection, postData } from './modules/formSection.js';
 
-function component() {
-    const element = document.createElement('div');
-  
-   // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
+const section = document.createElement('main');
 
-    // Add the image to our existing div.
-  const myIcon = new Image();
-  myIcon.src = Icon;
-
-  element.appendChild(myIcon);
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+section.appendChild(listing());
+section.appendChild(formSection());
+document.body.appendChild(section);
+postData();
